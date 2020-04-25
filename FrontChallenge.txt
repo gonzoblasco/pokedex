@@ -1,0 +1,26 @@
+# Pokedex Challenge
+Este desaf�o tiene como objetivo plasmar tus habilidades como desarrollador frontend. Es sin l�mite de tiempo
+y en caso de tener consultas no dudes en contactarnos.
+En cuanto lo recibamos, trataremos de darte feedback lo antes posible, pero en ocasiones podr�amos demorarnos
+hasta una semana.
+
+## Requerimientos
+Utilizar la [pok�api](https://pokeapi.co/docs/v2.html) para mostrar un listado de pok�mons
+   - no se permiten usar librer�as que encapsulen la pokeapi
+   - paginar de a 5 pok�mons, el listado.
+   - permitir hacer click y ver detalle del pok�mon
+       - habilidades (con sus descripciones) e imagen del pokem�n.
+   - debe estar disponible en al menos dos idiomas.
+   - enviar el c�digo mediante alg�n repositorio git
+
+## Criterios de evaluaci�n
+A la hora de evaluar las pruebas tendremos en cuenta:
+   - Cumplimiento del objetivo
+   - Buenas pr�cticas de desarrollo
+   - Arquitectura y legibilidad del c�digo
+   - Manejo del estado
+   - Atenci�n a la performance
+   - En caso de aplicar (dise�o de los tests)
+   - Responsive
+   - Wow effect, a todos nos gusta ver cosas bonitas �Sorprendenos!
+
