@@ -14,7 +14,7 @@ export default class App extends Component {
   render() {
     return (
       <Router>
-        <div className="App" style={{ background: `url(${backgroundImage})` }}>
+        <div className="App" style={{ background: `url(${backgroundImage})`}}>
           <NavBar />
           <div className="container">
             <Switch>
