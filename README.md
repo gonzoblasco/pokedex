@@ -33,3 +33,5 @@ A la hora de evaluar las pruebas tendremos en cuenta:
  * create-react-app
  * react-router-dom
  * styled-components
+ 
+ _Basado en este [repositorio](https://github.com/ChrisStayte/ReactDex)._

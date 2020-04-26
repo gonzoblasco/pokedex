@@ -20,7 +20,7 @@ export default class PokemonList extends Component {
     return (
       <Fragment>
         {this.state.pokemon ? (
-          <div className="row">
+          <div className="row mt-4">
             {this.state.pokemon.map((pokemon) => (
               <PokemonCard
                 key={pokemon.name}
