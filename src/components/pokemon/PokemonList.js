@@ -7,7 +7,7 @@ export default class PokemonList extends Component {
   // Usando limit puedo limitar la cantidad a mostrar por página,
   // mientras que usando offset puedo especificar cuantos lugares se saltan
   state = {
-    url: "https://pokeapi.co/api/v2/pokemon/?limit=10",
+    url: "https://pokeapi.co/api/v2/pokemon/?limit=5",
     pokemon: null,
   };
 
