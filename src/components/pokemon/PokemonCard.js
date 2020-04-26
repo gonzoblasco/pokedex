@@ -26,7 +26,7 @@ const Card = styled.div`
 const StyledLink = styled(Link)`
   text-decoration: none;
   color: black;
-`
+`;
 
 export default class PokemonCard extends Component {
   state = {
@@ -49,8 +49,17 @@ export default class PokemonCard extends Component {
     return (
       <div className="col-1-5 mb-5">
         <StyledLink to={`pokemon/${this.state.pokemonIndex}`}>
-          <Card className="card">
-            <h5 className="card-header">{this.state.pokemonIndex}</h5>
+          <Card className="card pb-2">
+            <h6 className="card-header">
+              {this.state.name
+                .toLowerCase()
+                .split(" ")
+                .map(
+                  (letter) =>
+                    letter.charAt(0).toUpperCase() + letter.substring(1)
+                )
+                .join(" ")}
+            </h6>
             {this.state.imageLoading ? (
               <img
                 src={spinner}
@@ -79,18 +88,6 @@ export default class PokemonCard extends Component {
                 </span>{" "}
               </h6>
             ) : null}
-            <div className="card-body mx-auto">
-              <h6 className="card-title">
-                {this.state.name
-                  .toLowerCase()
-                  .split(" ")
-                  .map(
-                    (letter) =>
-                      letter.charAt(0).toUpperCase() + letter.substring(1)
-                  )
-                  .join(" ")}
-              </h6>
-            </div>
           </Card>
         </StyledLink>
       </div>
