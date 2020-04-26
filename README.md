@@ -34,4 +34,6 @@ A la hora de evaluar las pruebas tendremos en cuenta:
  * react-router-dom
  * styled-components
  
- _Basado en este [repositorio](https://github.com/ChrisStayte/ReactDex)._
+## TODO:
+ * being able to change between languages
+ * change between the many content pages
