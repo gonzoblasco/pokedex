@@ -38,8 +38,9 @@ const PokemonList = () => {
               pokemon.url.split("/").length - 2
             ];
             const imageUrl = `https://github.com/PokeAPI/sprites/blob/master/sprites/pokemon/${pokemonIndex}.png?raw=true`;
+
             return (
-              <div className="col-1-5 mb-5">
+              <div className="col-1-5 mb-5" key={pokemonIndex}>
                 <StyledLink to={`pokemon/${pokemonIndex}`}>
                   <Card className="card pb-2">
                     <h6 className="card-header">

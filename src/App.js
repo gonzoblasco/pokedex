@@ -6,27 +6,31 @@ import PokemonListProvider from "./context/PokemonListContext";
 import PokemonList from "./components/pokemon/PokemonList";
 import Pokemon from "./components/pokemon/Pokemon";
 import './App.css'
+import PokemonProvider from "./context/PokemonContext";
+
 
 const App = () => {
   return (
     <Fragment>
       <PokemonListProvider>
-        <Router>
-          <Header />
-          <div className="container mt-2">
-            <div className="row">
-              <SearchField />
+        <PokemonProvider>
+          <Router>
+            <Header />
+            <div className="container mt-4">
+              <div className="row">
+                <SearchField />
+              </div>
+              <Switch>
+                <Route exact path="/" component={PokemonList} />
+                <Route
+                  exact
+                  path="/pokemon/:pokemonIndex"
+                  component={Pokemon}
+                />
+              </Switch>
             </div>
-            <Switch>
-              <Route exact path="/" component={PokemonList} />
-              <Route
-                exact
-                path="/pokemon/:pokemonIndex"
-                component={Pokemon}
-              />
-            </Switch>
-          </div>
-        </Router>
+          </Router>
+        </PokemonProvider>
       </PokemonListProvider>
     </Fragment>
   );

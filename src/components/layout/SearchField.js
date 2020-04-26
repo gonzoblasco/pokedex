@@ -23,7 +23,7 @@ const SearchField = () => {
   return (
     <form className="col-12">
       <div className="row">
-        <div className="col-md-9 col-sm-12 mb-2">
+        <div className="col-md-9 col-sm-12">
           <input
             name="query"
             className="form-control"
